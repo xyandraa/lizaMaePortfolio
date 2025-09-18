@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liza Mae Baquero | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #004d26, #66cc99); /* green gradient */
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 0;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      width: 90%;
+      max-width: 900px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #006633, #66cc99);
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 5px solid #d4ffb2;
+      margin-bottom: 20px;
+      object-fit: cover;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      font-size: 2.4em;
+      font-weight: bold;
+      margin: 0;
+      color: #fff;
+      letter-spacing: 2px;
+    }
+
+    header h1::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: #d4ffb2;
+      margin: 15px auto 0;
+      border-radius: 2px;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin: 15px 0 0;
+      color: #d4ffb2;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    /* Section styles (About, Skills, Projects) */
+    section {
+      text-align: center;
+      background: rgba(255,255,255,0.08);
+      padding: 30px;
+      margin: 0 20px;
+      border-radius: 12px;
+    }
+
+    section h3, section h2 {
+      background: #006633;
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 6px;
+      margin: 20px 0 10px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    }
+
+    section p, section ul {
+      text-align: justify;
+      font-size: 0.95em;
+      margin: 20px auto;
+      color: #f0fff0;
+      max-width: 600px;
+      line-height: 1.6em;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    /* Contact */
+    .contact ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px auto;   /* ✅ center same as About/Skills */
+      max-width: 600px;    /* ✅ limit width */
+      text-align: justify; /* ✅ uniform alignment */
+    }
+
+    .contact li {
+      margin: 12px 0;
+    }
+
+    .contact a {
+      color: #d4ffb2;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* Projects */
+    .projects article {
+      margin: 20px auto;
+      max-width: 600px;
+      text-align: left;
+    }
+
+    .projects article h3 {
+      background: none;
+      box-shadow: none;
+      padding: 0;
+      margin: 10px 0;
+      color: #d4ffb2;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.3);
+      font-size: 0.9em;
+      color: #d4ffb2;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- Header -->
+    <header>
+      <img src="images/liza.jfif" alt="Liza Mae Baquero">
+      <h1>LIZA MAE BAQUERO</h1>
+      <p>IT STUDENT | WEB DEVELOPER</p>
+    </header>
+
+    <!-- About Me -->
+    <section class="about-contact">
+      <h3>About Me</h3>
+      <p>
+        Hi, I’m Liza Mae, an IT student passionate about building and designing functional websites.
+        I enjoy turning ideas into interactive projects and learning new technologies.
+        My goal is to become a skilled web developer capable of creating user-friendly
+        and innovative digital solutions.
+      </p>
+
+      <!-- Contact -->
+      <h3>Contact</h3>
+      <div class="contact">
+        <ul>
+          <li>📧 <a href="mailto:baqueroliza15@gmail.com">baqueroliza15@gmail.com</a></li>
+          <li>📍 Balilihan, Bohol</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills">
+      <h3>Skills</h3>
+      <ul>
+        <li>Front-End Development (HTML, CSS, JavaScript)</li>
+        <li>Back-End Development (PHP, Node.js, SQL basics)</li>
+        <li>UI/UX Design Principles (designing user-friendly interfaces)</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects">
+      <h3>Projects</h3>
+      <article>
+        <h3>Blog Website</h3>
+        <p>
+          A responsive blog site where users can read articles and view categories.
+          Designed with HTML, CSS, and JavaScript, with a PHP + MySQL backend to manage posts.
+        </p>
+      </article>
+      <article>
+        <h3>E-Commerce Product Catalog</h3>
+        <p>
+          A web page that displays products with details like name, price, and description.
+          Made using HTML, CSS, and JavaScript, with a simple PHP + MySQL database to manage product listings.
+        </p>
+      </article>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      get in touch | 📧 baqueroliza15@gmail.com
+    </footer>
+
+  </div>
+</body>
+</html>
